@@ -1,0 +1,197 @@
+body {
+  margin: 0px;
+  color: #9e7474;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+p {
+  line-height: 40px;
+
+  text-align: left;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  color: rgba(158, 116, 116, 1);
+}
+.margin-left {
+  margin-left: 80px;
+  @media (max-width: 1200px) {
+    margin-left: 60px;
+  }
+  @media (max-width: 1035px) {
+    margin-left: 40px;
+  }
+  @media (max-width: 992px) {
+    margin: auto;
+  }
+}
+
+header {
+  .box {
+    padding-top: 30px;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 80px;
+    @media (max-width: 620px) {
+      margin-left: 60px;
+    }
+    @media (max-width: 580px) {
+      margin: auto;
+      justify-content: center;
+    }
+    @media (max-width: 540px) {
+      padding-top: 15px;
+    }
+
+    .logo {
+      font-family: "Sansita", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 52px;
+      color: rgba(0, 0, 0, 1);
+    }
+    .Line_1 {
+      overflow: visible;
+      position: absolute;
+      width: 10px;
+      height: 297px;
+      left: 70px;
+      top: 150px;
+      transform: matrix(1, 0, 0, 1, 0, 0);
+      @media (max-width: 1200px) {
+        left: 40px;
+      }
+      @media (max-width: 992px) {
+        left: 80px;
+      }
+      @media (max-width: 910px) {
+        visibility: hidden;
+      }
+    }
+    .Line_2 {
+      overflow: visible;
+      position: absolute;
+      width: 10px;
+      height: 35px;
+      left: 70px;
+      top: 470px;
+      transform: matrix(1, 0, 0, 1, 0, 0);
+      @media (max-width: 1200px) {
+        left: 40px;
+      }
+      @media (max-width: 992px) {
+        left: 80px;
+      }
+      @media (max-width: 910px) {
+        visibility: hidden;
+      }
+    }
+
+    img {
+      width: 5%;
+      margin-left: auto;
+      @media (max-width: 768px) {
+        width: 7%;
+      }
+      @media (max-width: 540px) {
+        width: 9%;
+      }
+      @media (max-width: 500px) {
+        width: 11%;
+      }
+    }
+  }
+}
+.hero-banner {
+  h1 {
+    padding-top: 40px;
+    text-align: left;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 67px;
+    color: rgba(0, 0, 0, 1);
+    @media (max-width: 1200px) {
+      font-size: 60px;
+    }
+    @media (max-width: 768px) {
+      padding-top: 20px;
+      font-size: 48px;
+    }
+    @media (max-width: 540px) {
+      font-size: 42px;
+    }
+  }
+
+  h2 {
+    padding-top: 20px;
+    line-height: 60px;
+    margin-top: -5px;
+    text-align: left;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    color: rgba(0, 0, 0, 1);
+    @media (max-width: 1200px) {
+      font-size: 36px;
+    }
+  }
+  p {
+    padding-top: 20px;
+    @media (max-width: 1200px) {
+      font-size: 18px;
+    }
+  }
+  .btn-section {
+    button {
+      width: 210px;
+      height: 60px;
+      border-radius: 81px;
+      background-color: rgba(216, 90, 90, 1);
+      border: none;
+      color: white;
+      transition: 0.5s all ease;
+      &:first-child:hover {
+        box-shadow: 20px 20px 40px #858585, -20px -20px 40px #ffffff;
+      }
+    }
+    #second-button {
+      margin-left: 30px;
+      background-color: white;
+      box-shadow: 20px 20px 60px #bdbdbd, -20px -20px 60px #ffffff;
+      color: rgba(216, 90, 90, 1);
+      @media (max-width: 1200px) {
+        margin-top: 10px;
+        margin-left: 0px;
+      }
+      &:hover {
+        box-shadow: 20px 20px 40px #858585, -20px -20px 40px #ffffff;
+      }
+    }
+  }
+  h3 {
+    padding-top: 40px;
+    white-space: nowrap;
+    line-height: 40px;
+
+    text-align: left;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 1);
+  }
+  #lunch-period {
+    padding-top: 0px;
+  }
+  .banner-image {
+    img {
+      max-width: 100%;
+      background-position: center;
+      background-size: cover;
+      zoom: 200%;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dreams Restaurent</title>
+    <!-- Bootstrap Cdn -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- Styesheet -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Raleway:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita:wght@900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="box .margin-left">
+          <div class="logo">
+            Dreams
+          </div>
+          <img src="./images/Line_1.svg" class="Line_1" alt="side Border" />
+          <img src="./images/Line_2.svg" class="Line_2" alt="side Border" />
+          <img src="./images/Group 104a.png" alt="Cart" />
+        </div>
+      </div>
+    </header>
+    <section class="hero-banner">
+      <div class="container margin-left">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1>
+              Tingle your tastebuds
+            </h1>
+            <h2 class="anim1">
+              Grilled Chicken
+            </h2>
+            <p class="anim1">
+              It’s marinated, seasoned with Dreams’s famous secret herbs and
+              spices, and then slowly roasted to juicy perfection.
+            </p>
+            <div class="btn-section anim1">
+              <button id="first-button">View Menu</button>
+              <button id="second-button">Book A Table</button>
+            </div>
+            <div class="lunch-time">
+              <h3>
+                Lunch
+              </h3>
+              <p id="lunch-period">12.00am - 4.00am</p>
+            </div>
+          </div>
+          <div class="banner-image col-lg-6">
+            <img src="./images/chicken-weeb.png" alt="chicken-hero" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gsap cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+
+    <!-- Gsap Code -->
+    <script>
+      gsap.from(".top-header", {
+        opacity: 0,
+        durayion: 12,
+        y: -80,
+        ease: "elastic(2,1.2)",
+      });
+      gsap.from(".banner-image", { duration: 2, y: 50, opacity: 0.5 });
+      gsap.from("h1", { opacity: 0, duration: 2, x: -60 });
+
+      gsap.from(".anim1", { opacity: 0, duration: 1, y: -50, stagger: 0.6 });
+    </script>
+  </body>
+</html>
